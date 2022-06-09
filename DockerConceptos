@@ -1,0 +1,15 @@
+*Comunicación externa e interna en un entorno de Contenedores
+  .- Docker Engine = Es una capa que se instala después del SO base del servidor o Cluter
+  - Cuando un usuario quiera ingresar a la aplicación desplegada en contenedores:
+      1.- Usuario hace una petición a una URL
+      2.- La URL hace la petición a la IP del servidor host o al cluster
+      3.- La petición la recibe el SO host
+      4.- El sistema Operativo host le delega la petición al Docker Engine
+      5.- El Docker Engine elige a que contenedor le tiene que enviar la petición
+      6.- Los contenedores a su vez tiene su propia RED(Virtual Network) y sus puertos se refieren al servicio y cada contendor tiene:
+        a) Un puerto externo
+          .- Debe ser único 
+        b) Un Puerto Interno
+          .- Se pueden repetir, es irrelevante
+        c) Los contenedores comparten con el SO host o incluso pueden contectar unidades cloud para el Almacenamiento persistente
+          
