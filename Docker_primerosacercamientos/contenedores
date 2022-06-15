@@ -1,0 +1,1 @@
+docker run -p 80:80 -p  8080:8080 --name billingapp sotobotero/udemy-devops:0.0.1  = Crear el contenedor billingapp
