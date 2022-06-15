@@ -1,0 +1,1 @@
+docker pull {nombre_usuario/nombre_imagen:version} = Descarga una imagen del docker hub a nuestro entorno
