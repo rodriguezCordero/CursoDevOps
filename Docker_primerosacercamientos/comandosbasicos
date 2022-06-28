@@ -1,0 +1,14 @@
+docker ps -a = Listar los contenedores existentes
+docker stop nombreobjeto = Detener un contenedor 
+docker logs nombreobjeto = Ver los logs de un contenedor
+docker start nombreobjeto  = Iniciar un contenedor detenido
+docker image ls = Listar las imagenes locales
+docker image rm nombreobjeto = Eliminar una imagen
++++++Usando Docker Compose+++++++++
+docker-compose -f stackdb.yml pull = Descargar las imagenes usndo docker-compose
+docker-compose -f stackdb.yml up -d = Inicar los contenedores
+docker build -t billingapp:prod --no-cache --build-arg JAR_FILE=target/*.jar . = Costruir la imagen
+docker run -p 80:80 -p  8080:8080 --name billingapp billingapp:prod = Levantar el contendor para probar
+docker tag billingapp:prod sotobotero/udemy-devops:0.0.2 = Darle un nuevo tag
+docker login (usas tu usario y contraseña) = loguearse en el docker engine hacia docker hub
+docker push sotobotero/udemy-devops:0.0.2 = hacer un push de la imagen
