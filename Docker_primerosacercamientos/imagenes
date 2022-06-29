@@ -1,1 +1,5 @@
 docker pull {nombre_usuario/nombre_imagen:version} = Descarga una imagen del docker hub a nuestro entorno
+---- Subir una Imágen ------ 
+docker login = Loguearse a dockerhub, colocar los datos
+docker tag <nombre_imagen_version> <nombre_usuario/repositorio:tag> = Antes de subir la imágen podemos poderle un tag
+docker push {nombre_usuario/repositorio:tag} = Subir una Imágen al respositorio, OJO tenemos que estar logueados a la cuenta en dockerhub.com
